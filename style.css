@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.header {
+  padding: 20px 40px;
+}
+.visit:hover {
+  border: none;
+  background-color: #1d8fec;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav img {
+  width: 380px;
+  height: 145px;
+  object-fit: cover;
+}
+.header {
+  position: relative;
+}
+/* styling for the listItems */
+.listItems {
+  display: flex;
+}
+li {
+  padding: 10px 15px;
+  list-style-type: none;
+}
+.header a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 17px;
+}
+.header a:hover {
+  padding-bottom: 8px;
+  border-bottom: 4px solid yellow;
+}
+#removeMen {
+  display: none;
+}
+#hamburgerMenu {
+  display: none;
+}
+@media (max-width: 949px) {
+  #hamburgerMenu {
+    display: initial;
+  }
+  .header {
+    background-color: white;
+  }
+  .listItems {
+    display: none;
+  }
+  /* i describe another css for it to show the lis items with d help of javascript */
+  .listItemsSHow {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 113px;
+    transition: 0.3s;
+    background-color: white;
+    gap: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .nav img {
+    width: 220px;
+    height: 90px;
+    object-fit: cover;
+  }
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+}
+.hero h1 {
+  text-shadow: 4px 3px 2px rgb(78, 78, 85);
+  color: blue;
+  font-size: 3rem;
+}
+.hero h2 {
+  text-shadow: 4px 3px 2px rgb(78, 78, 85);
+  color: blue;
+  font-size: 2rem;
+}
+@media (max-width: 539px) {
+  /* i reduced the font-size of the h1 and h2 in the hero section on mobile view  */
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
+.visit {
+  border: 3px solid yellow;
+  border-radius: 10px;
+  padding: 10px 17px;
+  background-color: none;
+  font-weight: lighter;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(146, 146, 13);
+  font-weight: bolder;
+  transition: 0.3s;
+}
+.visit:hover {
+  color: yellow;
+}
+.heroDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 38px;
+}
+.heroDiv p {
+  font-size: 20px;
+}
+.logoAnchor:hover {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+@media (min-width: 950px) {
+  #hamburgerMenu {
+    display: none;
+  }
+  #removeMen {
+    display: none;
+  }
+  .heroDiv {
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.main {
+  background-image: url(./image/whiteBacground.jfif);
+  background-size: cover;
+}
